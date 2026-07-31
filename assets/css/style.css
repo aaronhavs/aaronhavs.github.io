@@ -189,6 +189,27 @@ section h2 {
   display: block;
 }
 
+.about-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.about-flex > div {
+  flex: 1;
+  min-width: 260px;
+}
+
 .caption {
   font-size: 0.9rem;
   color: var(--text-muted);
